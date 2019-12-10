@@ -5,3 +5,4 @@ This repo is a collection of algorithms and other interesting software engineeri
 - `twoSum.js`: find the indices of the pair that sums to a target number
 - `linked-list.js`: exploring linked lists for Medium article
 - `countPrimes.js`: count the number of prime numbers less than a non-negatvie number, n
+- `mergeArrayObjects.js`: merges two arrays of objects
