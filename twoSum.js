@@ -1,3 +1,4 @@
+// find the indices of the pair that sums to a target number
 const twoSum = function(nums, target) {
   let result = [];
   for (let i = 0; i < nums.length; i++) {
@@ -8,7 +9,7 @@ const twoSum = function(nums, target) {
         // console.log(temp);
         if (temp === target && result.length === 0) {
           result.push(i, j);
-        } 
+        }
       }
     }
   }
