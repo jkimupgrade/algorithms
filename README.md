@@ -6,3 +6,4 @@ This repo is a collection of algorithms and other interesting software engineeri
 - `linked-list.js`: exploring linked lists for Medium article
 - `countPrimes.js`: count the number of prime numbers less than a non-negatvie number, n
 - `mergeArrayObjects.js`: merges two arrays of objects
+- `parityOutlier.js`: finds outlier (only even or only odd) in an array of integers
