@@ -2,20 +2,22 @@
 // There will always be only one integer that appears an odd number of times.
 const findOdd = A => {
   // store the counts of the numbers in an object
-  const obj = A.reduce((acc, cur) => {
-    if (acc[cur]) {
-      acc[cur]++
-    } else {
-      acc[cur] = 1;
-    }
-    return acc;
-  }, {});
-  // return the key that has an odd number for its value
-  for (key in obj) {
-    if (obj[key] % 2 !== 0) {
-      return Number(key);
-    }
-  }
+  // const obj = A.reduce((acc, cur) => {
+  //   if (acc[cur]) {
+  //     acc[cur]++
+  //   } else {
+  //     acc[cur] = 1;
+  //   }
+  //   return acc;
+  // }, {});
+  // // return the key that has an odd number for its value
+  // for (key in obj) {
+  //   if (obj[key] % 2 !== 0) {
+  //     return Number(key);
+  //   }
+  // }
+
+  A.reduce((acc, cur) => acc ^ cur);
 }
 
 
