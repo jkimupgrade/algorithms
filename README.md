@@ -8,3 +8,4 @@ This repo is a collection of algorithms and other interesting software engineeri
 - `mergeArrayObjects.js`: merges two arrays of objects
 - `parityOutlier.js`: finds outlier (only even or only odd) in an array of integers
 - `twoToOne.js`: combine two strings, keep distinct letters, and sort alphabetically
+- `findOdd.js`: given an array of numbers, return the number that appears an odd number of times
