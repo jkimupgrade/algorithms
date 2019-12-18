@@ -1,4 +1,4 @@
-# algorithms
+# 🧠 algorithms
 This repo is a collection of algorithms and other interesting software engineering problems that Jim has tackeld and solved.
 
 - `reverse.js`: given a 32-bit signed integer, reverse digits of an integer
