@@ -4,10 +4,16 @@
 # * delimiter: the splitting delimter
 # output: an array of strings
 
-def stringSplit(string, delimiter)
-  return string.split(delimiter)
-end
+def stringSplit(string=nil, delimiter=nil)
   
+  if string == nil
+    return 'please enter a string to be split'
+  elsif delimiter == nil
+    return 'please enter a delimiter'
+  else 
+    return string.split(delimiter)
+  end
+end
 
 # test
 pipe = 'hello | my | name | is | Jim | Kim | .'
@@ -30,3 +36,6 @@ puts "tilde delimited => #{tildeTest}"
 
 escapeTest = stringSplit(escape, '\\')
 puts "escape delimited => #{escapeTest}"
+
+noInputTest = stringSplit()
+puts "no input => #{noInputTest}"
