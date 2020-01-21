@@ -1,5 +1,5 @@
 # splits a string into a collection based on the delimiter
-# input 
+# input(s)
 # * value: the string to be split
 # * delimiter: the splitting delimter
 # output: an array of strings
