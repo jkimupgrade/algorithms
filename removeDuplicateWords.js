@@ -7,7 +7,7 @@
  *
  * Example 2:
  * Input: Code Code! Nice Code
- * Output: Code! Nice Code ---> (needs confirmation)
+ * Output: Code! Nice Code
  *
  * Example 3:
  * Input: Programming Code Programming!
@@ -15,26 +15,27 @@
 //  Function
 const removeDuplicateWords = (sentence) => {
     if (sentence === '') return 'Please pass a non-empty string to the function!';
-    return [...new Set(sentence.trim().split(/\b/))]
-        .filter((word, idx, arr) => {
-            // if following word includes punctuation, then trim current word
-            if (arr[idx + 1] && arr[idx + 1].match(/[.,:!?]/)) return word.trim();
-            return word;
-        })
-        .join('');
+    return sentence.trim().split(/\b/)
+    // return [...new Set(sentence.trim().split(/\b/))]
+    //     .filter((word, idx, arr) => {
+    //         // if following word includes punctuation, then trim current word
+    //         if (arr[idx + 1] && arr[idx + 1].match(/[.,:!?]/)) return word.trim();
+    //         return word;
+    //     })
+    //     .join('');
 }
 // Test(s)
-const test1 = removeDuplicateWords('Hello Hello, World!');
-console.log('test1: ', test1);
+// const test1 = removeDuplicateWords('Hello Hello, World!');
+// console.log('test1: ', test1);
 
 const test2 = removeDuplicateWords('Code Code! Nice Code');
 console.log('test2: ', test2);
 
-const test3 = removeDuplicateWords('Programming Code Programming!');
-console.log('test3: ', test3);
+// const test3 = removeDuplicateWords('Programming Code Programming!');
+// console.log('test3: ', test3);
 
-const test4 = removeDuplicateWords(" Hello Hello, World! ");
-console.log('test4: ', test4);
+// const test4 = removeDuplicateWords(" Hello Hello, World! ");
+// console.log('test4: ', test4);
 
-const test5 = removeDuplicateWords('');
-console.log('test5: ', test5);
+// const test5 = removeDuplicateWords('');
+// console.log('test5: ', test5);
