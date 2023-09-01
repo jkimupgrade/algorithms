@@ -23,7 +23,7 @@ def is_anagram(s: str, t: str) -> bool:
     return Counter(s) == Counter(t)
     
     # solution 3: sort and compare
-    # time: O(nlog(n)) | O(n)
+    # time: O(nlog(n)) | space: O(n)
     return sorted(s) == sorted(t)
 
 
